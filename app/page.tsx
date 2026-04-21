@@ -3,97 +3,131 @@ export default function Home() {
     <div className="flex flex-col flex-1">
 
       {/* Nav */}
-      <header className="border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-6 py-5 flex items-center justify-between">
-          <span className="text-sm font-semibold tracking-widest uppercase text-gray-800">
+      <header style={{ borderBottom: '1px solid #e2e8f0' }}>
+        <div className="max-w-5xl mx-auto px-6 py-5">
+          <span
+            className="text-sm font-semibold tracking-widest uppercase"
+            style={{ color: '#0F2744' }}
+          >
             Dstorm Consulting Inc.
           </span>
-          <nav className="flex gap-6 text-sm text-gray-500">
-            <a href="#about" className="hover:text-gray-900 transition-colors">About</a>
-            <a href="#work" className="hover:text-gray-900 transition-colors">Work</a>
-            <a href="#contact" className="hover:text-gray-900 transition-colors">Contact</a>
-          </nav>
         </div>
       </header>
 
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="max-w-4xl mx-auto px-6 py-24 md:py-36">
-          <h1 className="text-4xl md:text-5xl font-light tracking-tight text-gray-900 leading-tight">
-            Dstorm Consulting Inc.
-          </h1>
-          <p className="mt-6 text-xl text-gray-500 font-light max-w-xl">
-            Strategic consulting and digital product development.
-          </p>
+        <section style={{ backgroundColor: '#0F2744' }}>
+          <div className="max-w-5xl mx-auto px-6 py-24 md:py-32">
+            <h1 className="text-4xl md:text-5xl font-light text-white tracking-tight leading-tight">
+              Dstorm Consulting Inc.
+            </h1>
+            <p className="mt-5 text-lg md:text-xl font-light max-w-2xl" style={{ color: '#a8bfd4' }}>
+              Telecommunications consulting for enterprises and service providers.
+            </p>
+          </div>
         </section>
-
-        <hr className="border-gray-100 max-w-4xl mx-auto px-6" />
 
         {/* About */}
-        <section id="about" className="max-w-4xl mx-auto px-6 py-20">
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-8">
-            About
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl font-light">
-            Dstorm Consulting Inc. is a Texas-based S Corporation providing strategic
-            consulting, technology development, and digital product services. We build
-            and operate software products that solve real problems for real people.
-          </p>
-        </section>
-
-        <hr className="border-gray-100 max-w-4xl mx-auto px-6" />
-
-        {/* Portfolio */}
-        <section id="work" className="max-w-4xl mx-auto px-6 py-20">
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-8">
-            Our Work
-          </h2>
-          <div className="max-w-2xl">
-            <div className="border-l-2 border-gray-200 pl-6">
-              <p className="text-base text-gray-700 leading-relaxed font-light">
-                <span className="font-medium text-gray-900">ALIGN</span>{' '}
-                <span className="text-gray-400">(alignfaith.com)</span>
-                {' '}— A faith-centered relationship readiness platform built on the
-                Six Pillars of Relationship Fitness. Operated as a DBA of Dstorm
-                Consulting Inc.
+        <section style={{ borderBottom: '1px solid #e2e8f0' }}>
+          <div className="max-w-5xl mx-auto px-6 py-20 md:py-24">
+            <div className="max-w-3xl">
+              <h2
+                className="text-xs font-bold tracking-widest uppercase mb-6"
+                style={{ color: '#0F2744' }}
+              >
+                About
+              </h2>
+              <p className="text-base md:text-lg font-light leading-relaxed" style={{ color: '#334155' }}>
+                Dstorm Consulting Inc. is a Texas-based S Corporation providing
+                telecommunications consulting services. We partner with clients to evaluate,
+                plan, and implement telecom solutions that meet the demands of their business.
               </p>
             </div>
           </div>
         </section>
 
-        <hr className="border-gray-100 max-w-4xl mx-auto px-6" />
+        {/* Capabilities */}
+        <section style={{ backgroundColor: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
+          <div className="max-w-5xl mx-auto px-6 py-20 md:py-24">
+            <div className="max-w-3xl">
+              <h2
+                className="text-xs font-bold tracking-widest uppercase mb-6"
+                style={{ color: '#0F2744' }}
+              >
+                Capabilities
+              </h2>
+              <p className="text-base md:text-lg font-light leading-relaxed" style={{ color: '#334155' }}>
+                Our practice covers telecommunications strategy, carrier and vendor
+                evaluation, network and infrastructure planning, and ongoing technology
+                advisory. Engagements are scoped to each client&apos;s needs.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Contact */}
-        <section id="contact" className="max-w-4xl mx-auto px-6 py-20">
-          <h2 className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-8">
-            Contact
-          </h2>
-          <address className="not-italic text-base text-gray-700 font-light leading-8">
-            <p className="font-medium text-gray-900">Dstorm Consulting Inc.</p>
-            <p>5604 1st Street</p>
-            <p>Katy, TX 77493</p>
-            <p className="mt-4">
-              Email:{' '}
-              <a
-                href="mailto:thomas@dstormpg.com"
-                className="text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
+        <section style={{ borderBottom: '1px solid #e2e8f0' }}>
+          <div className="max-w-5xl mx-auto px-6 py-20 md:py-24">
+            <div className="max-w-3xl">
+              <h2
+                className="text-xs font-bold tracking-widest uppercase mb-6"
+                style={{ color: '#0F2744' }}
               >
-                thomas@dstormpg.com
-              </a>
-            </p>
-          </address>
+                Contact
+              </h2>
+              <address className="not-italic font-light leading-8" style={{ color: '#334155' }}>
+                <p className="font-medium text-base" style={{ color: '#1c2b3a' }}>
+                  Dstorm Consulting Inc.
+                </p>
+                <p>24315 Devon Park Dr</p>
+                <p>Katy, TX 77493</p>
+                <p className="mt-4">
+                  Phone:{' '}
+                  <a
+                    href="tel:2816501442"
+                    className="underline underline-offset-4 transition-opacity hover:opacity-60"
+                    style={{ color: '#1c2b3a' }}
+                  >
+                    281-650-1442
+                  </a>
+                </p>
+                <p>
+                  Email:{' '}
+                  <a
+                    href="mailto:thomas@dstormconsulting.com"
+                    className="underline underline-offset-4 transition-opacity hover:opacity-60"
+                    style={{ color: '#1c2b3a' }}
+                  >
+                    thomas@dstormconsulting.com
+                  </a>
+                </p>
+              </address>
+            </div>
+          </div>
         </section>
 
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-gray-400">
-          <span>© 2026 Dstorm Consulting Inc. All rights reserved.</span>
-          <div className="flex gap-5">
-            <a href="/privacy" className="hover:text-gray-600 transition-colors">Privacy Policy</a>
-            <a href="/terms" className="hover:text-gray-600 transition-colors">Terms of Use</a>
+      <footer style={{ backgroundColor: '#0F2744' }}>
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <span className="text-sm font-light" style={{ color: '#7a9ab5' }}>
+            © 2026 Dstorm Consulting Inc. All rights reserved.
+          </span>
+          <div className="flex gap-5 text-sm font-light" style={{ color: '#7a9ab5' }}>
+            <a
+              href="/privacy"
+              className="hover:text-white transition-colors"
+            >
+              Privacy
+            </a>
+            <a
+              href="/terms"
+              className="hover:text-white transition-colors"
+            >
+              Terms
+            </a>
           </div>
         </div>
       </footer>
