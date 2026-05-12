@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import LogoMark from '@/components/LogoMark'
 
 const NAV_LINKS = [
   { label: 'Services', href: '/services' },
@@ -16,17 +15,14 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3" aria-label="Dstorm Consulting home">
-          <LogoMark variant="dark" size={32} />
-          <div className="flex flex-col leading-none gap-0.5">
-            <span className="text-navy font-bold text-base tracking-tight">DSTORM</span>
-            <span
-              className="text-navy font-normal text-[0.55rem] uppercase"
-              style={{ letterSpacing: '0.15em' }}
-            >
-              CONSULTING
-            </span>
-          </div>
+        <Link href="/" className="flex flex-col leading-none gap-0.5" aria-label="Dstorm Consulting home">
+          <span className="text-navy font-bold text-base tracking-tight">DSTORM</span>
+          <span
+            className="text-navy font-medium text-[0.55rem] uppercase"
+            style={{ letterSpacing: '0.15em' }}
+          >
+            CONSULTING
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">

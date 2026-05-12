@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -71,7 +72,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
                 <p>
-                  Dstorm Consulting Inc. is an S Corporation registered in Texas, headquartered in Katy. We serve enterprises, multi-location businesses, and growing companies that depend on reliable telecom infrastructure but don't have dedicated procurement staff or established carrier relationships.
+                  Dstorm Consulting Inc. is an S Corporation registered in Texas, headquartered in Katy, and has been operating since 2015. We serve enterprises, multi-location businesses, and growing companies that depend on reliable telecom infrastructure but don't have dedicated procurement staff or established carrier relationships.
                 </p>
                 <p>
                   Our clients range from healthcare organizations managing HIPAA-compliant communications across multiple facilities to professional services firms that need reliable voice and data without an IT department to manage it. What they have in common is a need for straightforward advice and someone who handles the vendor side so they can focus on their business.
@@ -101,7 +102,7 @@ export default function AboutPage() {
                   The carriers pay a commission to the master agent when a deal closes, and a portion flows to us as the referring partner. That commission structure is how the advisory work is free to you. The carrier absorbs it as a customer acquisition cost, not your invoice.
                 </p>
                 <p>
-                  What that means practically: you get access to a vetted, nationwide carrier catalog, a partner who has done this procurement many times before, and ongoing relationship management after the contract is signed. All without adding a line item to your budget.
+                  What that means practically: you get access to a vetted, nationwide carrier catalog, a partner with a decade of experience in this procurement, and ongoing relationship management after the contract is signed. All without adding a line item to your budget.
                 </p>
               </div>
 
@@ -126,22 +127,15 @@ export default function AboutPage() {
           {/* Sidebar */}
           <aside className="space-y-8 lg:sticky lg:top-28">
 
-            {/*
-              PORTRAIT PHOTO PLACEHOLDER
-              Recommended: 600 × 800 px (3:4 portrait), JPEG or WebP
-              Depict: professional headshot of Thomas Marks, founder
-              Replace this div with a Next.js <Image> component once the photo is ready.
-            */}
-            <div
-              className="w-full rounded-xl border border-border bg-surface flex flex-col items-center justify-center"
-              style={{ aspectRatio: '3 / 4' }}
-            >
-              <p className="font-medium text-muted" style={{ fontSize: '0.9375rem' }}>
-                Photo: Thomas Marks, Founder
-              </p>
-              <p className="text-muted mt-1" style={{ fontSize: '0.8125rem' }}>
-                Recommended 600 × 800 px (3:4)
-              </p>
+            <div className="w-full rounded-xl overflow-hidden border border-border">
+              <Image
+                src="/thomas-marks.png"
+                alt="Thomas Marks, founder of Dstorm Consulting Inc."
+                width={600}
+                height={800}
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
 
             <div className="bg-surface border border-border rounded-lg p-6">
@@ -152,7 +146,7 @@ export default function AboutPage() {
                 {[
                   ['Entity', 'S Corporation'],
                   ['State', 'Texas'],
-                  ['Founded', '2024'],
+                  ['Founded', '2015'],
                   ['Headquarters', 'Katy, TX'],
                   ['Partnerships', 'Telarus, Intelisys'],
                   ['Carrier access', '200+ providers'],

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import LogoMark from '@/components/LogoMark'
 
 const SITE_LINKS = [
   { label: 'Services', href: '/services' },
@@ -24,19 +23,16 @@ export default function Footer() {
           <div>
             <Link
               href="/"
-              className="flex items-center gap-3 mb-5"
+              className="flex flex-col leading-none gap-0.5 mb-5"
               aria-label="Dstorm Consulting home"
             >
-              <LogoMark variant="light" size={28} />
-              <div className="flex flex-col leading-none gap-0.5">
-                <span className="font-bold text-base tracking-tight">DSTORM</span>
-                <span
-                  className="font-normal text-[0.55rem] uppercase"
-                  style={{ letterSpacing: '0.15em', color: 'rgba(255,255,255,0.6)' }}
-                >
-                  CONSULTING
-                </span>
-              </div>
+              <span className="font-bold text-base tracking-tight">DSTORM</span>
+              <span
+                className="font-medium text-[0.55rem] uppercase"
+                style={{ letterSpacing: '0.15em', color: 'rgba(255,255,255,0.6)' }}
+              >
+                CONSULTING
+              </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Telecom consulting for the businesses that depend on it.
