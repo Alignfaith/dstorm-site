@@ -2,103 +2,94 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | Dstorm Consulting Inc.',
+  title: 'Terms of Use',
+  description: 'Terms of use for Dstorm Consulting Inc.',
 }
 
 export default function TermsPage() {
   return (
-    <div className="flex flex-col flex-1">
-      <header style={{ borderBottom: '1px solid #e2e8f0' }}>
-        <div className="max-w-5xl mx-auto px-6 py-5">
+    <main>
+      <section className="bg-surface border-b border-border py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-6">
           <Link
             href="/"
-            className="text-sm font-semibold tracking-widest uppercase transition-opacity hover:opacity-60"
-            style={{ color: '#0F2744' }}
+            className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors mb-6"
           >
-            Dstorm Consulting Inc.
+            <span aria-hidden="true">&#8592;</span> Back to home
           </Link>
-        </div>
-      </header>
-
-      <main className="flex-1 max-w-5xl mx-auto px-6 py-20">
-        <div className="max-w-2xl">
-          <h1 className="text-3xl font-light mb-2" style={{ color: '#0F2744' }}>
-            Terms of Use
+          <h1
+            className="font-bold text-navy"
+            style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', letterSpacing: '-0.02em' }}
+          >
+            Terms of use
           </h1>
-          <p className="text-sm mb-12" style={{ color: '#94a3b8' }}>
-            Last updated: January 1, 2026
+          <p className="mt-2 text-muted text-sm">Last updated January 1, 2026</p>
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-6 py-14 md:py-20">
+        <div className="max-w-2xl space-y-10">
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Acceptance</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              By accessing this website you agree to be bound by these terms of use.
+              If you do not agree, please discontinue use of the site.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Use of this site</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              This website is provided for informational purposes about Dstorm
+              Consulting Inc. and its services. You may not use this site for any
+              unlawful purpose or in any way that could damage or impair its operation.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Intellectual property</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              All content on this site is the property of Dstorm Consulting Inc.
+              and may not be reproduced without written permission.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Limitation of liability</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              Dstorm Consulting Inc. makes no warranties regarding the accuracy or
+              completeness of information on this site and shall not be liable for
+              any damages arising from its use.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Governing law</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              These terms are governed by the laws of the State of Texas.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-semibold text-navy mb-3 text-base">Contact</h2>
+            <p className="text-muted leading-relaxed" style={{ fontSize: '0.9375rem' }}>
+              Questions about these terms may be directed to{' '}
+              <a
+                href="mailto:thomas@dstormconsulting.com"
+                className="text-accent hover:text-accent-dark transition-colors underline underline-offset-4"
+              >
+                thomas@dstormconsulting.com
+              </a>.
+            </p>
+          </section>
+
+          <p className="text-muted border-t border-border pt-8" style={{ fontSize: '0.8125rem' }}>
+            This is a placeholder. Full terms to be added.
           </p>
 
-          <div className="space-y-8 font-light leading-relaxed" style={{ color: '#334155' }}>
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Acceptance</h2>
-              <p>
-                By accessing this website you agree to be bound by these Terms of Use.
-                If you do not agree, please discontinue use of the site.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Use of This Site</h2>
-              <p>
-                This website is provided for informational purposes about Dstorm
-                Consulting Inc. and its services. You may not use this site for any
-                unlawful purpose or in any way that could damage or impair its operation.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Intellectual Property</h2>
-              <p>
-                All content on this site is the property of Dstorm Consulting Inc.
-                and may not be reproduced without written permission.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Limitation of Liability</h2>
-              <p>
-                Dstorm Consulting Inc. makes no warranties regarding the accuracy or
-                completeness of information on this site and shall not be liable for
-                any damages arising from its use.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Governing Law</h2>
-              <p>
-                These terms are governed by the laws of the State of Texas.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-sm font-semibold mb-3" style={{ color: '#1c2b3a' }}>Contact</h2>
-              <p>
-                Questions about these terms may be directed to{' '}
-                <a
-                  href="mailto:thomas@dstormconsulting.com"
-                  className="underline underline-offset-4 hover:opacity-60 transition-opacity"
-                  style={{ color: '#1c2b3a' }}
-                >
-                  thomas@dstormconsulting.com
-                </a>.
-              </p>
-            </section>
-
-            <p className="text-xs pt-4" style={{ color: '#94a3b8' }}>
-              This is a placeholder. Full terms to be added.
-            </p>
-          </div>
         </div>
-      </main>
-
-      <footer style={{ backgroundColor: '#0F2744' }}>
-        <div className="max-w-5xl mx-auto px-6 py-8">
-          <span className="text-sm font-light" style={{ color: '#7a9ab5' }}>
-            © 2026 Dstorm Consulting Inc. All rights reserved.
-          </span>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </main>
   )
 }

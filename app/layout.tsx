@@ -1,16 +1,26 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
-  title: 'Dstorm Consulting Inc. | Telecommunications Consulting',
-  description: 'Texas-based telecommunications consulting for enterprises and service providers.',
+  title: {
+    template: '%s | Dstorm Consulting',
+    default: 'Dstorm Consulting | Telecom Consulting for Texas Businesses',
+  },
+  description:
+    'Independent telecom consulting for enterprises and growing businesses across Texas. Audit your spend, modernize your infrastructure, manage your carriers through one trusted partner.',
   metadataBase: new URL('https://dstormconsulting.com'),
   openGraph: {
-    title: 'Dstorm Consulting Inc. | Telecommunications Consulting',
-    description: 'Texas-based telecommunications consulting for enterprises and service providers.',
+    title: 'Dstorm Consulting | Telecom Consulting for Texas Businesses',
+    description:
+      'Independent telecom consulting for enterprises and growing businesses across Texas.',
     type: 'website',
     url: 'https://dstormconsulting.com',
   },
@@ -19,9 +29,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="h-full">
-      <body className={`${inter.className} min-h-full flex flex-col bg-white text-gray-800 antialiased`}>
+    <html lang="en" className={inter.variable}>
+      <body className="min-h-screen flex flex-col bg-bg text-ink antialiased font-sans">
+        <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   )
