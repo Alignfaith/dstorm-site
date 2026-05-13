@@ -45,41 +45,6 @@ export default function ContactPage() {
               <ContactForm />
             </section>
 
-            {/* Calendly embed placeholder */}
-            <section>
-              <h2
-                className="font-semibold text-navy mb-2"
-                style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)', letterSpacing: '-0.01em' }}
-              >
-                Or book a time directly
-              </h2>
-              <p className="text-muted mb-6" style={{ fontSize: '0.9375rem' }}>
-                Pick a slot that works for you and we'll connect by phone or video.
-              </p>
-
-              {/*
-                CALENDLY EMBED
-                Replace this placeholder div with your Calendly inline widget code.
-                Example: paste the script + div from calendly.com/event_types/user/view
-                Recommended embed type: Inline Widget
-                Minimum height: 630px
-              */}
-              <div
-                className="border border-border rounded-xl bg-surface flex items-center justify-center text-center"
-                style={{ minHeight: '300px' }}
-              >
-                <div>
-                  <p className="text-muted font-medium mb-1" style={{ fontSize: '0.9375rem' }}>
-                    Calendly scheduling widget
-                  </p>
-                  <p className="text-muted" style={{ fontSize: '0.8125rem' }}>
-                    Paste the Calendly inline embed code here.
-                    {/* CALENDLY_URL: https://calendly.com/YOUR_USERNAME */}
-                  </p>
-                </div>
-              </div>
-            </section>
-
           </div>
 
           {/* Right sidebar: NAP + Map */}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const SITE_LINKS = [
   { label: 'Services', href: '/services' },
@@ -10,7 +11,7 @@ const SITE_LINKS = [
 
 const FAMILY_LINKS = [
   { label: 'DStorm Digital', href: 'https://dstormdigital.com' },
-  { label: 'AlignFaith', href: 'https://alignfaith.com' },
+  { label: 'ALIGN', href: 'https://alignfaith.com' },
   { label: 'Thomas Marks Group', href: 'https://thomasmarksgroup.com' },
   { label: 'Covenant CRM', href: 'https://covenantcrm.com/sign-up' },
 ]
@@ -23,13 +24,19 @@ export default function Footer() {
           <div>
             <Link
               href="/"
-              className="flex flex-col leading-none gap-0.5 mb-5"
+              className="flex flex-col items-start leading-none gap-1 mb-5"
               aria-label="Dstorm Consulting home"
             >
-              <span className="font-bold text-base tracking-tight">DSTORM</span>
+              <Image
+                src="/dstorm-logo.png"
+                alt="DSTORM"
+                width={320}
+                height={100}
+                style={{ width: '160px', height: 'auto' }}
+              />
               <span
-                className="font-medium text-[0.55rem] uppercase"
-                style={{ letterSpacing: '0.15em', color: 'rgba(255,255,255,0.6)' }}
+                className="font-medium text-[0.55rem] uppercase text-white"
+                style={{ letterSpacing: '0.15em' }}
               >
                 CONSULTING
               </span>

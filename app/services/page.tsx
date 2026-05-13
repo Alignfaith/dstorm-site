@@ -199,26 +199,6 @@ export default function ServicesPage() {
       <section className="bg-bg py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
 
-          {/*
-            HERO IMAGE PLACEHOLDER
-            Recommended: 1920×1080px (16:9), landscape
-            Depict: wide office/team environment, equipment room, or professional consultation scene
-            Replace this div with a Next.js <Image> component once the photo is ready.
-          */}
-          <div
-            className="w-full rounded-xl border border-border bg-surface flex items-center justify-center mb-14"
-            style={{ aspectRatio: '16 / 9' }}
-          >
-            <div className="text-center py-8">
-              <p className="font-medium text-muted" style={{ fontSize: '0.9375rem' }}>
-                Photo: Services hero
-              </p>
-              <p className="text-muted mt-1" style={{ fontSize: '0.8125rem' }}>
-                Recommended 1920 × 1080 px (16:9)
-              </p>
-            </div>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-12 lg:gap-16 items-start">
 
             {/* Sticky sidebar nav (desktop only) */}

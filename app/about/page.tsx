@@ -172,7 +172,7 @@ export default function AboutPage() {
                     cta: null,
                   },
                   {
-                    label: 'AlignFaith',
+                    label: 'ALIGN',
                     href: 'https://alignfaith.com',
                     desc: 'Faith-based community platform',
                     cta: null,

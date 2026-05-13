@@ -296,25 +296,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/*
-            LANDSCAPE PHOTO PLACEHOLDER
-            Recommended: 1200 × 900 px (4:3), JPEG or WebP
-            Depict: Thomas with a client, field consultation, or professional office setting
-            Replace this div with a Next.js <Image> component once the photo is ready.
-          */}
-          <div
-            className="w-full rounded-xl border border-border bg-bg flex items-center justify-center"
-            style={{ aspectRatio: '4 / 3' }}
-          >
-            <div className="text-center py-8">
-              <p className="font-medium text-muted" style={{ fontSize: '0.9375rem' }}>
-                Photo: Thomas with a client or in the field
-              </p>
-              <p className="text-muted mt-1" style={{ fontSize: '0.8125rem' }}>
-                Recommended 1200 × 900 px (4:3)
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const NAV_LINKS = [
@@ -15,8 +16,15 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none gap-0.5" aria-label="Dstorm Consulting home">
-          <span className="text-navy font-bold text-base tracking-tight">DSTORM</span>
+        <Link href="/" className="flex flex-col items-start leading-none gap-1" aria-label="Dstorm Consulting home">
+          <Image
+            src="/dstorm-logo.png"
+            alt="DSTORM"
+            width={320}
+            height={100}
+            style={{ width: '160px', height: 'auto' }}
+            priority
+          />
           <span
             className="text-navy font-medium text-[0.55rem] uppercase"
             style={{ letterSpacing: '0.15em' }}
