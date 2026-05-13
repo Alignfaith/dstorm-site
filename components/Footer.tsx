@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <Link
               href="/"
-              className="flex flex-col items-start leading-none gap-1 mb-5"
+              className="inline-block mb-5"
               aria-label="Dstorm Consulting home"
             >
               <Image
@@ -34,12 +34,6 @@ export default function Footer() {
                 height={100}
                 style={{ width: '160px', height: 'auto' }}
               />
-              <span
-                className="font-medium text-[0.55rem] uppercase text-white"
-                style={{ letterSpacing: '0.15em' }}
-              >
-                CONSULTING
-              </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Telecom consulting for the businesses that depend on it.

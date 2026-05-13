@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex flex-col items-start leading-none gap-1" aria-label="Dstorm Consulting home">
+        <Link href="/" aria-label="Dstorm Consulting home">
           <Image
             src="/dstorm-logo.png"
             alt="DSTORM"
@@ -25,12 +25,6 @@ export default function Nav() {
             style={{ width: '160px', height: 'auto' }}
             priority
           />
-          <span
-            className="text-navy font-medium text-[0.55rem] uppercase"
-            style={{ letterSpacing: '0.15em' }}
-          >
-            CONSULTING
-          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
